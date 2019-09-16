@@ -25,7 +25,7 @@ int main()
   //cout << sizeof(ptr) << endl;
   //cout << sizeof(*ptr) << endl;
   
-  if(ptr) free(ptr);
+  if(ptr != nullptr) delete ptr;
   ptr = nullptr;
 #endif
 
