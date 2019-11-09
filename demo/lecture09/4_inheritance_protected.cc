@@ -7,7 +7,7 @@ class Person
   public:
     Person() : name("not set") {}
     Person(string name) : name(name) {}
-    string getName(string name) const {return name;}
+    string getName() const {return name;}
     void setName(string name) {this->name=name;} 
     void printInfo() const;
   protected:
