@@ -7,7 +7,7 @@ class Person
   public:
     Person() : name("John Doe") {}
     Person(string name) : name(name) {}
-    string& getName() {return name;}
+    string getName() {return name;}
     void setName(string name) {this->name=name;} 
     void printInfo() const;
   private:
