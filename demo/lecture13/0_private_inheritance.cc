@@ -23,7 +23,7 @@ class Student : private Person
 {
   public:
     void setSid(int sid) {this->sid = sid;}
-    void setName(string name1);
+    void setName(string name);
     int getSid() const {return sid;}
     void printInfo() const;
   private:
