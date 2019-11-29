@@ -30,10 +30,10 @@ class Student : private Person
     int sid;
 };
 
-void Student::setName(string name1)
+void Student::setName(string name)
 {
   // It causes an error with private member name
-  name = name1; 
+  this->name = name; 
 }
 
 void Student::printInfo() const
