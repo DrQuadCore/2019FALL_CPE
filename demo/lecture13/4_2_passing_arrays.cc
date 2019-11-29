@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 #if 1
 // Error case
 void foo(int a[3])
@@ -37,15 +36,15 @@ void print(int (&a)[3])
 
 #if 0
 // for variable array sizes
-template<size_t N>
-void foo(int (&a)[N])
+template<class T, size_t N>
+void foo(T (&a)[N])
 {
   for(auto &i : a)
     cout << &i << endl;
 }
 
-template<size_t N>
-void print(int (&a)[N])
+template<class T, size_t N>
+void print(T (&a)[N])
 {
   for(auto i : a)
     cout << i << endl;
