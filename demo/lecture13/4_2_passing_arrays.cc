@@ -12,6 +12,12 @@ void foo(int a[3])
   for(auto &i : a)
     cout << &i << endl;
 }
+
+void print(int a[3])
+{
+  for(auto i : a)
+    cout << i << endl;
+}
 #endif
 
 #if 0
