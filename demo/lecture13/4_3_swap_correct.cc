@@ -22,8 +22,8 @@ void swapValues( T (&var1)[N], T (&var2)[N] )
   }
 }
 
-template<size_t N>
-void print(int (&a)[N])
+template<class T, size_t N>
+void print(T (&a)[N])
 {
   for(auto i : a)
     cout << i << endl;
