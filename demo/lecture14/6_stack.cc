@@ -11,11 +11,11 @@ using std::vector;
 
 int main( )
 {
-    stack<char, vector<char>> s;
+    stack<char, vector<char>> s;   // We change the default container from deque to vector. 
 
     cout << "Enter a line of text:\n";
     char next;
-    cin.get(next);
+    cin.get(next);   // cin.get is used for accepting spaces and new line.
     while (next != '\n')
     {
         s.push(next);
